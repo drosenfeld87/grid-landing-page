@@ -10,8 +10,15 @@ footer {
   grid-column: 1 / span 5;
 }
 
-main {
-  grid-column: 1 / span 3;
+.main {
+  grid-column: span 3;
+  width: 100%;
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 aside {
@@ -35,7 +42,6 @@ body {
 }
 
 header,
-main,
 aside,
 footer {
   background: #eaeaea;
