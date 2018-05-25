@@ -5,19 +5,28 @@ body {
   grid-template-rows: 40px auto 40px;
   grid-gap: 3px;
   grid-template-areas:
-       "c c c c c c c c c c c m"
+       "h h h h h h h h h h h h"
        "c c c c c c c c c c c m"
        "f f f f f f f f f f f m";
 }
 
 .header {
-  margin: 5% 0 0 5%;
+  grid-area: h;
+  background-color: #F5F1D5;
+  width: 100%;
+}
+
+.logo {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.main-title {
+  grid-area: c;
   color: yellow;
   font-size: 2vw;
   font-family: 'Poppins', 'Helvetica', sans-serif;
-  grid-area: c;
   z-index: 100;
-  display: flex;
 }
 
 .main {
@@ -26,9 +35,15 @@ body {
   background-image: url("img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.p-main {
+  position: relative;
+  padding: 20px;
+  line-height: 1.4vw;
+  font-weight: bold;
+  color: white;
+  margin: 5% 0 0 5%;
 }
 
 .form {
@@ -45,7 +60,7 @@ body {
 .footer {
     grid-area: f;
     font-weight: bold;
-    background-color: #F0E799;
+    background-color: #F5F1D5;
 }
 
 #button {
