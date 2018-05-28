@@ -8,6 +8,11 @@ body {
        "h h h h h h h h h h h h"
        "c c c c c c c c c c c m"
        "f f f f f f f f f f f f";
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+
 }
 
 .header {
@@ -20,27 +25,25 @@ body {
   background-size: 10px;
 }
 
-.main-text {
-  grid-area: c;
-  width: 90%;
-}
 
 .main-title {
-  position: absolute;
-  left: 28vw;
-  top: 4.5vw;
+  position: relative;
+  top: 2vw;
   grid-area: c;
   color: yellow;
   text-shadow: 2px 2px 2px black;
-  font-size: 2vw;
+  font-size: 2.2vw;
   font-family: 'Poppins', 'Helvetica', sans-serif;
   z-index: 100;
+  margin: 5% 0 0 5%;
 }
 
 .p-main {
+  grid-area: c;
+  font-size: 1.2vw;
   position: relative;
-  width: 60%;
-  padding-top: 4.5vw;
+  width: 70%;
+  padding-top: 1vw;
   padding-bottom: 1vw;
   line-height: 1.6vw;
   font-weight: bold;
@@ -51,12 +54,16 @@ body {
 .main {
   grid-area: c;
   height: 75vh;
-  width: 97vh;
+  width: 100%;
   background-image: url("img/background.jpg");
   background-repeat: no-repeat;
   background-size: 180%;
 }
 
+.cta-airplane {
+  background-repeat: no-repeat;
+  z-index: 200;
+}
 
 .form {
   position: relative;
@@ -104,12 +111,6 @@ body {
 }
 
 /* Demo Specific Styles */
-body {
-  font-family: 'Raleway', sans-serif;
-  margin: 0 auto;
-  max-width: 56em;
-  padding: 1em 0;
-}
 
 aside,
 footer {
